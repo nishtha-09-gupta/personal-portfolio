@@ -1,4 +1,4 @@
-/* -------------------- Data -------------------- */
+
 const projects = [
     {
       id: 1,
@@ -37,11 +37,10 @@ const projects = [
     { year: "January 2025", title: "Secretary", text: "Became Secretary of AI/ML Club.", image: "aiml.png" },
     { year: "September 2025", title: "Co-Founder", text: "Co-founded Nuvi Brainz, an AI-driven startup initiative.", image: "nuvi.png" }
   ];
-  
-  /* -------------------- DOM Helpers -------------------- */
+
   function renderProjects() {
     const projectsGrid = document.getElementById("projectsGrid");
-    projectsGrid.innerHTML = ""; // clear
+    projectsGrid.innerHTML = "";
     projects.forEach(project => {
       const card = document.createElement("div");
       card.className = "project-card";
@@ -68,7 +67,6 @@ const projects = [
   function renderTimeline() {
     const timeline = document.getElementById("timelineList");
     timeline.innerHTML = "";
-    // Render newest first (older items appear further down the page)
     timelineData.slice().reverse().forEach(item => {
       const node = document.createElement("div");
       node.className = "timeline-item";
@@ -94,7 +92,6 @@ const projects = [
     });
   }
   
-  /* small helper to avoid accidental HTML injection */
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -102,7 +99,6 @@ const projects = [
       .replace(/>/g, "&gt;");
   }
   
-  /* -------------------- UI: Nav Toggle & Smooth Scroll -------------------- */
   document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
@@ -111,16 +107,13 @@ const projects = [
       navLinks.classList.toggle("active");
     });
   
-    // Close mobile nav on link click
     navLinks.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => navLinks.classList.remove("active"));
     });
   
-    // render content
     renderProjects();
     renderTimeline();
 
-    // Ensure hero image loads, fallback if missing
     const heroImg = document.querySelector(".hero-image img");
     if (heroImg) {
       heroImg.addEventListener("error", () => {
@@ -131,17 +124,33 @@ const projects = [
       });
     }
   
-    // contact form (simple handler)
     const contactForm = document.getElementById("contactForm");
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      // simple UI feedback - you can replace with email API
       const name = contactForm.name.value.trim();
-      const message = `Thanks ${name || "there"}! Your message was received.`;
-      alert(message);
+      const email = contactForm.email.value.trim();
+      const messageText = contactForm.message.value.trim();
+
+      // Build a mailto link so messages are sent to your inbox without a backend
+      const recipient = "nishthagupta209@gmail.com";
+      const subject = `New portfolio contact from ${name || "Visitor"}`;
+      const bodyLines = [
+        `Name: ${name || "N/A"}`,
+        `Email: ${email || "N/A"}`,
+        "",
+        "Message:",
+        messageText || "(no message)",
+      ];
+      const body = bodyLines.join("\n");
+      const mailtoUrl = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      // Open the user's email client with the composed message
+      window.location.href = mailtoUrl;
+
+      // Lightweight confirmation for UX
+      alert(`Thanks ${name || "there"}! Click send in your mail app to deliver the message.`);
       contactForm.reset();
     });
   
-    // animations removed
   });
   
