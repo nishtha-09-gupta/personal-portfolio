@@ -1,174 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishtha Gupta - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nishtha Gupta - Portfolio</title>
+
+  <!-- Styles & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Main script -->
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!--  Navigation -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Nishtha.dev</div>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Nishtha.dev</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Nishtha</span></h1>
-                    <h2>Frontend Developer & UI Designer</h2>
-                    <p>I craft responsive websites and web applications that provide users with an engaging experience.</p>
-                    <a href="#projects" class="cta-button">View My Work</a>
-                </div>
-                <div class="hero-image">
-                    <img src="pic.jpeg" alt="Nishtha Gupta">
-                </div>
-            </div>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Nishtha</span></h1>
+          <h2>Frontend Developer & UI Designer</h2>
+          <p>I craft responsive websites and web applications that provide users with an engaging experience.</p>
+          <a href="#projects" class="cta-button">View My Work</a>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="me.jpeg" alt="About Me">
-                </div>
-                <div class="about-text">
-                    <h3>Passionate Web Developer</h3>
-                    <p>Hello! I'm a web developer based in Delhi. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
-                    <p>My goal is to always build products that provide pixel-perfect, performant experiences.</p>
-                    <p>I'm an active member of the Google Developer Group, where I engage with the tech community and stay updated with the latest industry trends.</p>
-                    <p>I also love participating in hackathons, collaborating with fellow developers, and building innovative solutions to real-world problems.</p>
-                </div>
-            </div>
+        <div class="hero-image">
+          <img src="./pic.jpeg" alt="Nishtha Gupta" loading="eager" decoding="async" />
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-            </div>
-            <div class="skills-content">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML</h3>
-                    <p>Semantic HTML, Accessibility</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS</h3>
-                    <p>Responsive Design, Animations</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>ES6+, DOM Manipulation</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React</h3>
-                    <p>Hooks, Context API</p>
-                </div>
-            </div>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title"><h2>About Me</h2></div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="me.jpeg" alt="About Me" />
         </div>
-    </section>
+        <div class="about-text">
+          <h3>Passionate Web Developer</h3>
+          <p>Hello! I'm a web developer based in Delhi. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.</p>
+          <p>My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+          <p>I'm an active member of the Google Developer Group, where I engage with the tech community and stay updated with the latest industry trends.</p>
+          <p>I also love participating in hackathons, collaborating with fellow developers, and building innovative solutions to real-world problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-            </div>
-            <div class="projects-grid" id="projectsGrid">
-                
-            </div>
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-title"><h2>My Skills</h2></div>
+      <div class="skills-content">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML</h3>
+          <p>Semantic HTML, Accessibility</p>
         </div>
-    </section>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h3>CSS</h3>
+          <p>Responsive Design, Animations</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM Manipulation</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h3>React</h3>
+          <p>Hooks, Context API</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>nishthagupta209@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Location</h3>
-                        <p>Delhi, India</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/nishtha-09-gupta" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/nishtha-gupta-67b817323/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Timeline -->
+  <section id="timeline">
+    <div class="container">
+      <div class="section-title"><h2>My Journey</h2></div>
+      <div class="timeline" id="timelineList">
+        <!-- timeline items inserted by JS -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Nishtha Gupta. All rights reserved.</p>
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-title"><h2>My Projects</h2></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title"><h2>Get In Touch</h2></div>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+          </form>
         </div>
-    </footer>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="script.js"></script>
+
+        <div class="contact-info">
+          <div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>nishthagupta209@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Location</h3>
+              <p>Delhi, India</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/nishtha-09-gupta" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nishtha-gupta-67b817323/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container"><p>&copy; 2025 Nishtha Gupta. All rights reserved.</p></div>
+  </footer>
 </body>
 </html>
