@@ -130,8 +130,6 @@ const projects = [
       const name = contactForm.name.value.trim();
       const email = contactForm.email.value.trim();
       const messageText = contactForm.message.value.trim();
-
-      // Build a mailto link so messages are sent to your inbox without a backend
       const recipient = "nishthagupta209@gmail.com";
       const subject = `New portfolio contact from ${name || "Visitor"}`;
       const bodyLines = [
@@ -143,11 +141,7 @@ const projects = [
       ];
       const body = bodyLines.join("\n");
       const mailtoUrl = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-      // Open the user's email client with the composed message
       window.location.href = mailtoUrl;
-
-      // Lightweight confirmation for UX
       alert(`Thanks ${name || "there"}! Click send in your mail app to deliver the message.`);
       contactForm.reset();
     });
