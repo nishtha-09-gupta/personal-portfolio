@@ -31,8 +31,8 @@ const projects = [
   
   const timelineData = [
     { year: "2022 - 2024", title: "Head Prefect & Speaker", text: "Led as Head Prefect and speaker at events, Cambridge Court World School.", image: "hpg.jpeg" },
-    { year: "October 2024", title: "Open Source Contributor", text: "Contributed in Hacktoberfest & GirlScript Summer of Code.", image: "hacktober.png" },
-    { year: "November 2024", title: "AI/ML Volunteer", text: "Volunteered at Google Developer Group, engaging in tech and community activities.", image: "gdg.png" },
+    { year: "October 2024", title: "Open Source Contributor", text: "Contributed in Hacktoberfest.", image: "hacktober.png" },
+    { year: "2024 - 2025", title: "AI/ML Volunteer", text: "Volunteered at Google Developer Group, engaging in tech and community activities.", image: "gdg.png" },
     { year: "November 2024", title: "Hackathon Winner", text: "Won 1st place at Visual Vortex Hackathon by GDG.", image: "me.jpeg" },
     { year: "January 2025", title: "Secretary", text: "Became Secretary of AI/ML Club.", image: "aiml.png" },
     { year: "September 2025", title: "Co-Founder", text: "Co-founded Nuvi Brainz, an AI-driven startup initiative.", image: "nuvi.png" }
