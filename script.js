@@ -1,6 +1,15 @@
 const projects = [
     {
-      id: 1,
+        id: 1,
+        title: "Yapster Chat App",
+        description: "A real-time chatting application built with modern web technologies for seamless communication.",
+        image: "yapster.png", // Make sure you have an image file for this project
+        tags: ["React", "JavaScript", "Socket.io", "Node.js", "MongoDB"],
+        liveLink: "https://chat-app-client-nine-iota.vercel.app/login",
+        codeLink: "https://github.com/nishtha-09-gupta/chat-app"
+      },
+    {
+      id: 2,
       title: "University Website",
       description: "A fully responsive University website design.",
       image: "edu.png",
@@ -9,7 +18,7 @@ const projects = [
       codeLink: "https://github.com/nishtha-09-gupta/html-css-project"
     },
     {
-      id: 2,
+      id: 3,
       title: "Weather Dashboard",
       description: "A weather application that provides current weather and forecasts for any location.",
       image: "weather.png",
@@ -18,16 +27,17 @@ const projects = [
       codeLink: "https://github.com/nishtha-09-gupta/weather-app-project"
     },
     {
-      id: 3,
+      id: 4,
       title: "Image Slider",
       description: "An interactive image slider showcasing pilgrim sites with smooth transitions for an immersive experience.",
       image: "p.png",
       tags: ["HTML", "CSS", "Javascript"],
       liveLink: "https://nishtha-09-gupta.github.io/Image-slider/",
       codeLink: "https://github.com/nishtha-09-gupta/Image-slider"
-    }
+    },
+    
 ];
-  
+
 const timelineData = [
     { year: "2022 - 2024", title: "Head Prefect & Speaker", text: "Led as Head Prefect and speaker at events, Cambridge Court World School.", image: "hpg.jpeg" },
     { year: "October 2024", title: "Open Source Contributor", text: "Contributed in Hacktoberfest.", image: "hacktober.png" },
