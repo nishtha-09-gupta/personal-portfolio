@@ -15,7 +15,7 @@ const projects = [
         description: "A real-time chatting application built with the MERN stack and Socket.io for seamless, instant communication.",
         image: "yapster.png", 
         tags: ["MERN", "Socket.io","Tailwind","Cloudinary"],
-        liveLink: "https://chat-app-client-nine-iota.vercel.app/login",
+        liveLink: "https://chat-app-client-gules-six.vercel.app/login",
         codeLink: "https://github.com/nishtha-09-gupta/chat-app"
       },
     {
