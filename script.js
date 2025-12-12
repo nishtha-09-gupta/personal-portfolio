@@ -27,7 +27,15 @@ const projects = [
       liveLink: "https://nishtha-09-gupta.github.io/html-css-project/",
       codeLink: "https://github.com/nishtha-09-gupta/html-css-project"
     },
-    
+    {
+        id: 4,
+        title:"Recipe Finder",
+        description:"A vintage themed recipe finder with smooth UI and live API integration, helping users discover recipes effortlessly.",
+        image:"grandma.png",
+        tags:["HTML","CSS","React"],
+        liveLink:"https://nishtha-09-gupta.github.io/grandmas-recipe/",
+        codeLink:"https://github.com/nishtha-09-gupta/grandmas-recipe"
+    }
 ];
 
 
